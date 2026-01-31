@@ -1,2 +1,64 @@
-# CrazyAnchoring-for-CrazyAnnotation
- A productivity-boosting auxiliary script for bounding-box data annotation tasks on the ZP CrazyAnnotation platform.
+<div align="center" dir="auto">
+
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto">狂插-作业拉框插入器</h1></svg></div><h3>Built for ZP CrazyAnnotation Platform</h3></div>
+
+### 这是一个专门用于ZP CrazyAnnotation平台的智能序号输入辅助脚本
+
+---
+## 新特性
+
+[v1.7] 全面修复React受控输入框失焦回滚问题，支持更稳定的序号插入机制。
+
+
+
+---
+[v1.5] 支持多种序号格式，智能识别输入框类型，提供可视化拖拽面板。
+
+---
+
+使用 **Shift + Z** 在鼠标位置**弹出序号输入面板**。
+
+使用 **ESC** 键或点击 **×** 按钮**关闭面板**。
+
+---
+
+## 核心功能
+
+- 🎯 **智能输入框识别** - 自动跟踪当前活动的输入框/文本域
+- ⌨️ **快捷键呼出** - Shift+Z在鼠标位置弹出输入面板
+- 📋 **丰富序号库** - 支持数字、括号、圆圈数字、罗马数字等多种格式
+- 🎮 **可视化操作** - 拖拽面板、自定义位置、实时反馈
+- 🔧 **技术修复** - 彻底解决React受控组件失焦值回滚问题
+- 📝 **自定义输入** - 支持输入任意自定义序号内容
+
+### 支持的序号格式
+
+| 类型 | 示例 | 用途 |
+|------|------|------|
+| 括号数字 | （1）、（2）...（10） | 标准标注 |
+| 圆圈数字 | ①、②...⑩ | 醒目标记 |
+| 罗马数字 | I、II、III | 分级标注 |
+| 空位标记 | 空1、空2...空10 | 占位提示 |
+| 自定义 | 任意文本 | 特殊需求 |
+
+### 技术特性
+
+- ✅ **React兼容** - 完美支持受控组件状态管理
+- ✅ **富文本编辑器** - 支持contentEditable输入框
+- ✅ **事件系统** - 完整模拟input/change/beforeinput事件
+- ✅ **光标定位** - 智能维护插入位置和选择状态
+- ✅ **错误处理** - 完善的异常捕获和用户提示
+
+## 使用流程
+
+1. **点击目标输入框** - 激活需要插入序号的输入区域
+2. **按下Shift+Z** - 在鼠标位置弹出序号面板
+3. **点击所需序号** - 自动插入到当前输入框
+4. **拖拽移动面板** - 按需调整面板位置
+5. **自定义输入** - 使用底部输入框插入特殊序号
+
+## 调试模式
+
+在脚本开头将 `const DEBUG = false;` 改为 `true` 可开启详细日志输出，便于排查问题。
+
+Enjoy it～🍺
